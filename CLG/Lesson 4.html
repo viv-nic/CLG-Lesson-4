@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+    <title>CLG - Web Dev Lesson 4</title>
+</head>
+
+<body>
+
+
+    <h1>Let's fun abit of fun with Divs, Spans, IDs, Classes, and Backgrounds</h1>
+
+    <ol>
+        <li>HTML formatting tags</li>
+        <li>Divs & Spans</li>
+        <li>Display</li>
+        <li>IDs & Classes</li>
+        <li>Background Styling</li>
+    </ol>
+
+    <img class="welcome" src="./images/cat.jpg" alt="picture of a cat looking up praying" />
+
+    <div id="basicTags">
+        <div class="wrapper">
+            <h4>1. Basic HTML tags for formatting</h4>
+
+            <ul>
+                <li><span>&lt;sub&gt;</span> e.g. H<sub>2</sub>O</li>
+                <li><span>&lt;sup&gt;</span> e.g. x<sup>2</sup></li>
+                <li><span>&lt;del&gt;</span> e.g. <del>show the deleted text</del></li>
+                <li><span>&lt;ins&gt;</span> e.g. <ins>shows new text inserted</ins></li>
+                <li><span>&lt;strong&gt;</span> e.g. <strong> for important words </strong> (text will be bold by
+                    default)</li>
+                <li><span>&lt;em&gt;</span> e.g. <em>for emphasis</em> (by default will be Italic)</li>
+            </ul>
+
+
+            <p> <span>L</span>orem ipsum, dolor <sub>subscript example</sub> sit amet consectetur adipisicing elit.
+                Dolorum
+                expedita modi quos eligendi similique. Quas, minima saepe totam <sup>superscript testing</sup>
+                assumenda impedit rerum porro vero consectetur dolores repellendus?
+                Cumque veritatis nostrum reprehenderit. <del>I would like to delete this</del> <ins>and insert
+                    this.</ins> Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. <strong style="background-color: #3a86ff">Consequatur ducimus qui adipisci
+                    tempore
+                    ipsum ullam suscipit quam</strong>, id, eum, magnam iure error corrupti cum quos
+                numquam repellat animi nam sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda
+                optio, ea maiores ipsum obcaecati
+                corporis id voluptatem placeat veniam accusamus temporibus eos quo repellat. <em>Quidem magni explicabo
+                    temporibus repellat?</em></p>
+        </div>
+    </div>
+
+    <div>
+        <div class="wrapper">
+
+            <h4>2. Divs & Spans</h4>
+            <p> <span>D</span>ivs and <span>S</span>pan are generic elements used to help style HTML </p>
+            <p> <span>Div</span> elements are <strong>block level</strong> elements. They allow you to group html
+                element together. By default:</p>
+            <ul>
+                <li>Div elements <em>start on a new line</em></li>
+                <li>Elements after a div start on the <em>next line</em></li>
+                <li>It takes up the <em>full width</em> of their parent elememt</li>
+            </ul>
+            <p> <span>Span</span> elements are <strong>inline</strong> elements and are used to style individual
+                sections of the elements. They make it easier to add little bits of formatting. By default:</p>
+
+            <ul>
+                <li>Span elements <em>do not start on a new line</em></li>
+                <li>Content after a span <em>continues on the same line</em></li>
+                <li>It takes up <em>only as wide as its content</em></li>
+            </ul>
+            <p> </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="wrapper">
+
+            <h4>3. Display</h4>
+            <p>The CSS display property controls whether an element appears as an <strong>inline</strong> or a
+                <strong>block</strong> level element. It can also control whether an element is rendered on the page at
+                all
+            </p>
+            <span>Display</span> properties values are:
+            <ul>
+                <li>Inline</li>
+                <ul>
+                    <li>continue on the same line</li>
+                    <li>only the width of their content</li>
+                    <li>content after them will continue on the same line</li>
+                    <li>height & width can't be controlled with CSS</li>
+                </ul>
+                <li>Block</li>
+                <ul>
+                    <li>start on a new line</li>
+                    <li>elements after them start on the next line</li>
+                    <li>take up full width of their parent eleemt</li>
+                    <li>height & width can be overridden using CSS <em>height</em> and <em>weight</em> properties</li>
+                </ul>
+                <li>Inline-block</li>
+                <ul>
+                    <li><em>similar to inline element</em>, <strong style="color:black;">except height and
+                            width</strong> can be controlled
+                        by CSS</li>
+
+                </ul>
+                <li>None</li>
+                <ul>
+                    <li>it removes that element from the layout entirely and element is not rendered</li>
+                </ul>
+            </ul>
+            <p><span>Img</span> tag. How about it? Inline or block?</p>
+            <ul>
+                <li>It is an <em>exception</em></li>
+                <li>It has a default display value of Inline, but acts as if it has the styling Inline-block</li>
+                <li>meaning its height and width can be adjusted but they continue on the same line as other element
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div class="wrapper">
+
+            <h4>4. IDs & Classes</h4>
+            <span>IDs</span>:
+            <ul>
+                <li>We can add an Id attribute to any HTML element to uniquely identify it</li>
+                <li>An element with a particular Id can be styled with CSS using <strong><em>#</strong> CSS
+                    selector</em></li>
+                <li>We can only use <em>one Id to style one element</em></li>
+            </ul>
+            <span>Classes</span>:
+            <ul>
+                <li>We can add a Class attribute to identify similar elements on a page</li>
+                <li>An element with a particular class can be styled with CSS using <strong><em>.</strong> CSS
+                    selector</em></li>
+                <li>We <em>can have as many classes as we like</em> on the page unlike ID</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="wrapper">
+
+            <h4>5. Background styling</h4>
+            <p><span>Background</span> styling is useful when playing around with styling various elements. This make it
+                <em>easier to identify which element is being styled</em>, and how much <em>space it is taking up</em>
+                on the page
+            </p>
+
+            <p>In CSS background properties we can control:</p>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-position</li>
+            </ul>
+
+            <p>You can also use <em>shorthand for the background properties</em></p>
+            <p> e.g. div{ background: orange url(/cat.jpg) no-repeat right bottom;}</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

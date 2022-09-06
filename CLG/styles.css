@@ -1,0 +1,74 @@
+body {
+    background-color: #ffbe0b;
+}
+
+h1 {
+    color: #fb5607;
+    margin: 60px 10px;
+    text-align: center;
+}
+
+.welcome {
+    width: 500px;
+    display: block;
+    margin: 50px 400px;
+    border: 40px solid #8338ec;
+    padding: 50px;
+    background-image: url(./images/birds.jpg);
+
+}
+
+h4 {
+    color: #ff006e;
+    text-align: center;
+}
+
+#basicTags {
+    border: 10px solid #ff006e;
+    background: #fb5607 url(./images/funky.jpg) no-repeat top left;
+    padding: 20px;
+}
+
+div {
+    border: 10px solid #ff006e;
+    background-color: #3a86ff;
+    padding: 20px;
+}
+
+.wrapper {
+
+    border: none;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+
+
+span {
+    padding-left: 15px;
+    border-bottom: 3px solid #8338ec;
+    border-left: 3px solid #8338ec;
+    background-color: #ffbe0b;
+}
+
+ul li>span {
+    border: none;
+    background: none;
+}
+
+ol {
+    color: #8338ec;
+    margin-left: 650px;
+}
+
+ul li em {
+    color: #ff006e
+}
+
+ul li {
+    color: #3a86ff;
+}
+
+div p em {
+    color: #ff006e;
+}
